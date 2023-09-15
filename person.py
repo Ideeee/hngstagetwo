@@ -16,7 +16,7 @@ def create_person(
     person : schemas.PersonBase,
     db: Session = Depends(get_db)
 ):
-    existing = db.query(Person).filter(Person.name == person.name).first()
+    existing = db.query(Person).filter(Person.name == person.name.lower()).first()
 
     if existing:
         raise HTTPException(status_code=400, detail='This user already exists')

@@ -11,5 +11,5 @@ class Person(Base):
     id = Column(Integer, primary_key=True, index=True)
     name = Column(String(100), nullable=False, unique=True)
     city = Column(String(100))
-    date_created = Column(DateTime, default=dt.datetime.utcnow)
-    last_updated = Column(DateTime, default=dt.datetime.utcnow)
+    date_created = Column(DateTime, default=dt.datetime.utcnow, nullable=False)
+    last_updated = Column(DateTime, default=dt.datetime.utcnow, nullable=False)

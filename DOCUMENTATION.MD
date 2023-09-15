@@ -27,7 +27,7 @@ These **endpoints** are described in more detail below.
 
 ## Getting Started
 
-For instructions on how to setup the application, go to the README file here: https://github.com/Ideeee/hngstagetwo/blob/main/README.md
+For instructions on how to setup the application, go to the README file here: https://github.com/Ideeee/hngstagetwo/blob/main/README.MD
 
 ## Endpoints
 
@@ -191,7 +191,7 @@ As demonstrated above, the API includes basic validation rules for request data.
 
 This API has certain limitations that may need to be addressed depending on your project requirements:
 
-** User Authentication and Authorization**: The API does not use authentication and authorization mechanisms. All users have can access all endpoints. You would need to implement proper authentication and authorization to restrict access based on user roles and permissions.
+**User Authentication and Authorization**: The API does not use authentication and authorization mechanisms. All users have can access all endpoints. You would need to implement proper authentication and authorization to restrict access based on user roles and permissions.
 
 
 

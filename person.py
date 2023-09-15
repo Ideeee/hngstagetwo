@@ -23,7 +23,7 @@ def create_person(
     
     new_person = Person(
         name=person.name.lower(),
-        city=person.city.lower(),
+        city=person.city.lower() if person.city else None,
     )
 
     db.add(new_person)

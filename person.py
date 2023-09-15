@@ -33,7 +33,7 @@ def create_person(
     return new_person
 
 @router.get('/api', status_code=200, response_model=List[schemas.Person])
-def get_person(
+def get_people(
     db: Session = Depends(get_db)
 ):
     

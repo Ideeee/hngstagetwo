@@ -1,4 +1,4 @@
-from typing import Optional
+from typing import Optional, List
 from fastapi import APIRouter, HTTPException, Depends
 from sqlalchemy.orm import Session
 from sqlalchemy import or_
@@ -32,7 +32,7 @@ def create_person(
 
     return new_person
 
-@router.get('/api', status_code=200, response_model=list[schemas.Person])
+@router.get('/api', status_code=200, response_model=List[schemas.Person])
 def get_person(
     db: Session = Depends(get_db)
 ):
